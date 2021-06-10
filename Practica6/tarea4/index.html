@@ -10,22 +10,49 @@
     .flexbox  
     {
         display: flex;
+        background-color: brown;
         width: 99.8 vw;
         height: 47vw;
-        align-items: center;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .flexbox2
     {
         display: flex;
-        width: 8vw;
-        height: 8vw;
-
+        background-color: burlywood;
+        width: 12vw;
+        height: 12vw;
+        justify-content: center;
+    }
+   .conector
+    {
+        display: flex;
+        background-color: brown;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    body
+    {
+        padding: 0px;
+        margin: 0px;
     }
 </style>
 <body>
-    <div class="flexbox">
-      <DIV class="flexbox2" style="font-size: 70px;">N</DIV>
-    </div>
+    
+
+        <div class="flexbox">
+            <div class="conector">
+                <div class="flexbox2"></div>
+                <div class="flexbox2"></div>
+                <div class="flexbox2"></div>
+            </div>
+            <div class="conector" style="align-self: center;">
+                <div class="flexbox2"></div>
+            </div>
+            <div class="conector">
+                <div class="flexbox2"></div>
+                <div class="flexbox2"></div>
+                <div class="flexbox2"></div>
+            </div>
+        </div>
 </body>
-</html>
